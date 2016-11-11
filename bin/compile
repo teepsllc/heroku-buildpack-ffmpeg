@@ -38,7 +38,7 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p ffmpeg
 cd ffmpeg
-curl -L --silent $DOWNLOAD_URL | tar -xzf
+curl -L --silent $DOWNLOAD_URL | tar -xz
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
